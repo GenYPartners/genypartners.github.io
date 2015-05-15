@@ -1,0 +1,95 @@
+.container{
+	width: 101%;
+	height: 100%;
+	position: absolute;
+	padding: 0;
+	
+}
+
+/*Left Bar*/
+
+.bar1{
+	height: 100%;
+	width:20%;
+	background-color: black;
+	position: absolute;
+	z-index:700;
+}
+
+.logo{
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: 40%
+}
+.logo_pic{
+	height: 40%;
+	width: 40%;
+	border: 1px solid white
+}
+
+/*Slide Out Bar*/
+
+.bar2{
+	position: absolute;
+	height: 100%;
+	width:20%;
+	background-color: white;
+	z-index: 400;
+}
+
+.close{
+	color: black;
+	font-size: 2em;
+	margin-right: 3%
+}
+
+.nav-container{
+	position: absolute;
+	top:30%;
+	left: -10%;
+	width: 100%;
+	text-align: center;
+}
+
+.nav-list{
+	font-size: 1.5em;
+	line-height: 2;
+	list-style-type: none;
+	text-decoration: underline;
+	font-family: 'Roboto';
+	font-weight: 100
+}
+
+
+/*Main Content*/
+.main_content{
+	height: 100%;
+	width:80%;
+	position: absolute;
+	left: 20%
+}
+
+.content_box{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+/*Home Section */
+
+.home-pic{
+	height: 100%;
+	width: 100%;
+	z-index: 4
+}
+
+.home-text{
+	position: absolute;
+	z-index: 5;
+	top: 40%;
+	left: 30%;
+	text-align: center;
+	color: white
+}
+
