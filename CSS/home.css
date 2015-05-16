@@ -127,7 +127,7 @@
 	color: white
 }
 
-/*Fact Section*/
+/*Services Section*/
 
 #services{
 	background-color: red;
@@ -135,6 +135,38 @@
 }
 
 .services-text{
+	position: absolute;
+	z-index: 5;
+	top: 40%;
+	left: 30%;
+	text-align: center;
+	color: white
+}
+
+/*Team Section*/
+
+#team{
+	background-color: green;
+	z-index:0;
+}
+
+.team-text{
+	position: absolute;
+	z-index: 5;
+	top: 40%;
+	left: 30%;
+	text-align: center;
+	color: white
+}
+
+/*Contact Section*/
+
+#contact{
+	background-color: white;
+	z-index:0;
+}
+
+.contact-text{
 	position: absolute;
 	z-index: 5;
 	top: 40%;

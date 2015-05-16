@@ -61,3 +61,28 @@ $(".services").click(function(){
 	$("#"+top).removeClass("top");
 });
 
+$(".team").click(function(){
+	var top = $(".top").attr("id");
+	$(".bar2").css("left","0")
+	$("#team").animate(
+		{"z-index":"300"}, "slow"
+	);
+	$("#"+top).animate(
+		{"z-index":"0"}, "slow"
+	);
+	$("#team").addClass("top");
+	$("#"+top).removeClass("top");
+});
+
+$(".contact").click(function(){
+	var top = $(".top").attr("id");
+	$(".bar2").css("left","0")
+	$("#contact").animate(
+		{"z-index":"300"}, "slow"
+	);
+	$("#"+top).animate(
+		{"z-index":"0"}, "slow"
+	);
+	$("#contact").addClass("top");
+	$("#"+top).removeClass("top");
+});
