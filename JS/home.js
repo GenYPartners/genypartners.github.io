@@ -76,7 +76,10 @@ $(".team").click(function(){
 
 $(".contact").click(function(){
 	var top = $(".top").attr("id");
-	$(".bar2").css("left","0")
+	$(".bar2").animate(
+		{"left":"0"}, "slow", function(){
+		$(this).attr("id","closed")
+	})
 	$("#contact").animate(
 		{"z-index":"300"}, "slow"
 	);
