@@ -3,6 +3,7 @@
 	height: 100%;
 	position: absolute;
 	padding: 0;
+	overflow: hidden;
 	
 }
 
@@ -42,6 +43,14 @@
 	cursor: hand;
 	width: 25%;
 	text-align: center;
+}
+
+.copyright{
+	position: absolute;
+	color:white;
+	font-size: .7em;
+	top: 97%;
+	left: 10%
 }
 
 /*Slide Out Bar*/
