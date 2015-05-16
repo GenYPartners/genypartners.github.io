@@ -6,6 +6,10 @@
 	
 }
 
+.hovering:hover{
+	cursor: pointer;
+}
+
 /*Left Bar*/
 
 .bar1{
@@ -20,12 +24,24 @@
 	text-align: center;
 	vertical-align: middle;
 	position: absolute;
-	top: 40%
+	top: 10%
 }
 .logo_pic{
 	height: 40%;
 	width: 40%;
 	border: 1px solid white
+}
+
+.expand{
+	position: absolute;
+	color: white;
+	font-size: 5em;
+	font-weight: 100;
+	top: 45%;
+	left: 70%;
+	cursor: hand;
+	width: 25%;
+	text-align: center;
 }
 
 /*Slide Out Bar*/
@@ -77,7 +93,9 @@
 }
 
 /*Home Section */
-
+#home{
+	z-index: 10
+}
 .home-pic{
 	height: 100%;
 	width: 100%;
@@ -93,3 +111,34 @@
 	color: white
 }
 
+/*Fact Section*/
+
+#facts{
+	background-color: blue;
+	z-index:0;
+}
+
+.fact-text{
+	position: absolute;
+	z-index: 5;
+	top: 40%;
+	left: 30%;
+	text-align: center;
+	color: white
+}
+
+/*Fact Section*/
+
+#services{
+	background-color: red;
+	z-index:0;
+}
+
+.services-text{
+	position: absolute;
+	z-index: 5;
+	top: 40%;
+	left: 30%;
+	text-align: center;
+	color: white
+}
