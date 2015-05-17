@@ -3,7 +3,8 @@
 	height: 100%;
 	position: absolute;
 	padding: 0;
-	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: hidden;
 	
 }
 
@@ -103,7 +104,7 @@
 
 /*Home Section */
 #home{
-	z-index: 300
+	z-index: 0
 }
 .home-pic{
 	height: 100%;
@@ -139,19 +140,105 @@
 /*Services Section*/
 
 #services{
-	background-color: red;
-	z-index:0;
-}
-
-.services-text{
-	position: absolute;
-	z-index: 5;
-	top: 40%;
-	left: 30%;
+	background-color: white;
+	z-index:300;
 	text-align: center;
-	color: white
 }
 
+.service, .service-text-box{
+	top: 30%;
+	position: absolute;
+	overflow-y:scroll;	
+	opacity: 1
+}
+
+.service{
+	height: 40%;
+	width: 30%;
+	border: 5px solid black;
+	opacity: .8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 23% 0%;
+	z-index: 5
+}
+
+
+
+#web{
+	background-image: url("https://dl.dropboxusercontent.com/s/vwa3wxa02zzmndt/Tell-your-story.jpg?dl=0");
+	left: 1%
+}
+
+#web-text-box{
+	left: 2%
+}
+
+#web:hover{
+	opacity: 1
+}
+
+#web:hover + #web-text-box{
+	font-weight: 200
+}
+
+#content{
+	background-image: url("https://dl.dropboxusercontent.com/s/7mdud0tftek93lx/tumblr_ndyfvm0EwX1tubinno1_1280.jpg?dl=0");
+	left: 34.33%;
+}
+
+#content-text-box{
+	left: 36.33%;
+}
+
+#content:hover{
+	opacity: 1
+}
+
+#engagement{
+	background-image: url("https://dl.dropboxusercontent.com/s/q72xlrmrn0jndpy/tumblr_nohopkwhlj1uqj0ypo1_500.jpg?dl=0");
+	left: 67.66%;
+}
+
+#engagement-text-box{
+	left: 67.66%;
+	height: 17%;
+	top: 35%
+}
+
+#engagement:hover{
+	opacity: 1
+}
+
+.service-title{
+	font-family: 'Roboto';
+	font-weight: 200;
+	top: 30%;
+	position: absolute;
+	margin: 0
+
+
+}
+
+.service-text{
+	color: black;
+	z-index: 16;
+	position: absolute;
+	display: none;
+	font-family: "Roboto";
+	font-weight: 100
+}
+
+.open{
+	position: absolute;
+	height: 90%;
+	width: 90%;
+	margin: 0 auto;
+	left: 0;
+	z-index: 7;
+	opacity: 1;
+	top: 5%
+}
 /*Team Section*/
 
 #team{
@@ -216,3 +303,4 @@
 	text-align: center;
 	color: black
 }
+
