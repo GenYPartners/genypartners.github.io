@@ -115,10 +115,20 @@
 .home-text{
 	position: absolute;
 	z-index: 5;
-	top: 40%;
-	left: 30%;
+	top: 30%;
+	left: 5%;
 	text-align: center;
-	color: white
+	color: white;
+	
+}
+
+.htitle, .hsubtitle{
+	font-weight: 100;
+	text-align: center;
+}
+
+.htitle{
+	font-size: 3em
 }
 
 /*Fact Section*/
@@ -127,6 +137,14 @@
 	background-color: white;
 	z-index:0;
 	
+}
+
+.instructions{
+	font-weight: 100;
+	font-family: 'Roboto';
+	font-size: 1.8em;
+	left: 43%;
+	position: absolute;
 }
 
 .fact-box{
@@ -327,7 +345,8 @@
 }
 
 #web:hover{
-	opacity: 1
+	opacity: 1;
+	cursor: pointer;
 }
 
 #web:hover + #web-text-box{
@@ -344,7 +363,8 @@
 }
 
 #content:hover{
-	opacity: 1
+	opacity: 1;
+	cursor: pointer;
 }
 
 #engagement{
@@ -359,7 +379,8 @@
 }
 
 #engagement:hover{
-	opacity: 1
+	opacity: 1;
+	cursor: pointer;
 }
 
 .service-title{
@@ -431,7 +452,8 @@
 }
 
 #garrett:hover{
-	opacity: 1
+	opacity: 1;
+	cursor: pointer;
 }
 
 #garrett:hover + #garrett-text-box{
@@ -448,7 +470,8 @@
 }
 
 #ellen:hover{
-	opacity: 1
+	opacity: 1;
+	cursor: pointer;
 }
 
 #luke{
@@ -463,7 +486,8 @@
 }
 
 #luke:hover{
-	opacity: 1
+	opacity: 1;
+	cursor: pointer;
 }
 
 .team-title{

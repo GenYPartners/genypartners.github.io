@@ -1,4 +1,4 @@
-$(".expand").click(function(){
+$(".expand-b").click(function(){
 	var closed = $(".bar2").attr("id");
 
 	if (closed != "closed"){
