@@ -124,24 +124,134 @@
 /*Fact Section*/
 
 #facts{
-	background-color: blue;
-	z-index:0;
+	background-color: white;
+	z-index:300;
+	
+}
+
+.fact-box{
+	height: 20%;
+	width: 35%;
+	border: 2px solid black;
+	position: absolute;
 }
 
 .fact-text{
-	position: absolute;
-	z-index: 5;
-	top: 40%;
-	left: 30%;
+	height: 100%;
+	width: 90%;
+	color: black;
+	font-size: 1em;
 	text-align: center;
-	color: white
+	vertical-align: middle;
+	margin: 0
 }
 
+.next{
+	font-size: 3.5em;
+	left: 20%;
+	position: absolute;
+	top: -130%;
+	left: 5%
+}
+
+.hline{
+	height: .1%;
+	border: 2px solid black;
+
+	position: absolute;
+	display: none;
+	width: 0%;
+}
+
+.vline{
+	height: 16%;
+	border: 2px solid black;
+	position: absolute;
+	display: none;
+	height: 0%;
+}
+
+
+
+#box1{
+	left: 5%;
+	top: 5%;
+}
+
+#line1{
+	left: 40%;
+	top: 14%;
+}
+
+#line2{
+	left: 72.5%;
+	top: 14%;
+}
+
+
+#box2{
+	left: 55%;
+	top: 28%;
+	visibility: hidden;
+}
+
+#line3{
+	left: 55%;
+	top: 37.5%
+}
+
+#line4{
+	left: 22.5%;
+	top: 37.5%
+}
+
+#box3{
+	left: 5%;
+	top: 52%;
+	visibility: hidden;
+}
+
+#line5{
+	left: 40%;
+	top: 61%;
+
+}
+
+#line6{
+	left: 72.5%;
+	top: 61%;
+
+}
+
+#box4{
+	left: 55%;
+	top: 76%;
+	visibility: hidden;
+}
+
+#line7{
+	left: 55%;
+	top: 86%;
+}
+
+#line8{
+	left: 22.5%;
+	top: 86%;
+	height: 15%;
+
+}
+
+#box5{
+	left: 5%;
+	top: 101%;
+	margin-bottom: 5%;
+	visibility: hidden;
+}
 /*Services Section*/
 
 #services{
 	background-color: white;
-	z-index:300;
+	z-index:0;
 	text-align: center;
 }
 
@@ -229,6 +339,7 @@
 	font-weight: 100
 }
 
+
 .open{
 	position: absolute;
 	height: 90%;
@@ -242,17 +353,107 @@
 /*Team Section*/
 
 #team{
-	background-color: green;
+	background-color: white;
 	z-index:0;
+	text-align: center;
+}
+
+
+.team-member, .team-text-box{
+	top: 30%;
+	position: absolute;
+	overflow-y:scroll;	
+	opacity: 1
+}
+
+.team-member{
+	height: 40%;
+	width: 30%;
+	border: 5px solid black;
+	opacity: .8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 23% 0%;
+	z-index: 5
+}
+
+
+
+#garrett{
+	background-image: url("https://dl.dropboxusercontent.com/s/cxhhgvq4jgutpjb/Optimized-FullSizeRender-4.jpg?dl=0");
+	left: 1%
+}
+
+#garrett-text-box{
+	left: 2%
+}
+
+#garrett:hover{
+	opacity: 1
+}
+
+#garrett:hover + #garrett-text-box{
+	font-weight: 200
+}
+
+#ellen{
+	background-image: url("https://dl.dropboxusercontent.com/s/dt22i46l6c5ac0w/Optimized-FullSizeRender-5.jpg?dl=0");
+	left: 34.33%;
+}
+
+#ellen-text-box{
+	left: 36.33%;
+}
+
+#ellen:hover{
+	opacity: 1
+}
+
+#luke{
+	background-image: url("https://dl.dropboxusercontent.com/s/423mlvp9p0swz42/Optimized-FullSizeRender.jpg?dl=0");
+	left: 67.66%;
+}
+
+#luke-text-box{
+	left: 67.66%;
+	height: 17%;
+	top: 35%
+}
+
+#luke:hover{
+	opacity: 1
+}
+
+.team-title{
+	font-family: 'Roboto';
+	font-weight: 200;
+	top: 30%;
+	position: absolute;
+	margin: 0;
+	color: white;
+	left: 0%;
+	top: 10%
 }
 
 .team-text{
+	color: black;
+	z-index: 16;
 	position: absolute;
-	z-index: 5;
-	top: 40%;
-	left: 30%;
-	text-align: center;
-	color: white
+	display: none;
+	font-family: "Roboto";
+	font-weight: 100
+}
+
+
+.open{
+	position: absolute;
+	height: 90%;
+	width: 90%;
+	margin: 0 auto;
+	left: 0;
+	z-index: 7;
+	opacity: 1;
+	top: 5%
 }
 
 /*Contact Section*/

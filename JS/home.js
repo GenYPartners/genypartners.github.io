@@ -143,3 +143,100 @@ $(".service").click(function(){
 	}
 
 })
+
+$(".team-member").click(function(){
+	var eid = $(this).attr("id");
+	var eclass = $(this).attr("class");
+	var text = "#"+eid+"-text";
+	var title = "#"+eid+"-title";
+	console.log(eid + " " + eclass);
+	if (eclass.includes("open") == false){
+	$(this).addClass("open");
+	$(text).css("display","initial");
+	$(this).css("left", "5%");
+	$(title).css("font-weight","400");
+	$(title).css("margin-left","1.5%");
+	$(title).css("top","72%");
+	$(this).css("background-size","100% auto")
+	if (eid == "garrett") {
+		$(title).css("color","white");
+		$(text).css("color","white");
+	} else if (eid == "ellen") {
+		$(title).css("top","50%");
+		$(text).css("top","40%");
+		$(text).css("color","white");
+	} else if (eid == "luke") {
+		$(text).css("color","white");
+		$(text).css("top","5%");
+		//$(text).css("left","0%");
+		$(title).css("top","15%");
+	};
+	}else{
+		$(this).removeClass("open");
+		$(text).css("display","none")
+		$(title).css("font-weight","100");
+		$(title).css("margin-left","0");
+		$(title).css("top","30%")
+		if (eid == "garrett") {
+			$(this).css("left", "1%")
+		} else if (eid == "ellen") {
+			$(this).css("left", "34.33%")
+		} else if (eid == "luke") {
+			$(this).css("left", "67.66%");
+		};
+	}
+
+})
+
+$("#fact1").click(function(){
+	$("#line1").css("display","inline")
+	$("#line1").animate(
+			{"width":"32.5%"}, "slow", function(){
+				$("#line2").css("display","inline")
+				$("#line2").animate(
+					{"height":"14%"}, "slow", function(){
+						$("#box2").css("visibility","visible")
+							})})})
+
+$("#fact2").click(function(){
+	$("#line3").css("display","inline")
+	$("#line3").animate(
+			{"animation-direction":"reverse", "width":"32.5%","left": "22.5%"}, "slow", function(){
+				$("#line4").css("display","inline")
+				$("#line4").animate(
+					{"height":"14.5%"}, "slow", function(){
+						$("#box3").css("visibility","visible")
+							})})})
+
+$("#fact3").click(function(){
+	$("#line5").css("display","inline")
+	$("#line5").animate(
+			{"animation-direction":"reverse", "width":"32.5%"}, "slow", function(){
+				$("#line6").css("display","inline")
+				$("#line6").animate(
+					{"height":"15%"}, "slow", function(){
+						$("#box4").css("visibility","visible")
+							})})})
+
+$("#fact4").click(function(){
+	$("#line7").css("display","inline")
+	$("#line7").animate(
+			{"animation-direction":"reverse", "width":"32.5%","left": "22.5%"}, "slow", function(){
+				$("#line8").css("display","inline")
+				$("#line8").animate(
+					{"height":"15%"}, "slow", function(){
+						$("#facts").css("overflow-x", "scroll")
+						$("#box5").css("visibility","visible")
+							})})});
+
+$("#fact4").click(function(){
+	$('a[href^="#"]').on('click', function(event) {
+    var target = $(".bottom");
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});})
+
