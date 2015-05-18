@@ -20,7 +20,7 @@ $(".close").click(function(){
 	})
 })
 
-$(".logo").click(function(){
+$(".go-home").click(function(){
 	var top = $(".top").attr("id");
 	if (top != "home") {
 		console.log(top)
@@ -48,6 +48,22 @@ $(".why_millenials").click(function(){
 		{"z-index":"0"}, "slow"
 	);
 	$("#facts").addClass("top");
+	$("#"+top).removeClass("top");
+});
+
+$(".learn").click(function(){
+	var top = $(".top").attr("id");
+	$(".bar2").animate(
+		{"left":"0"}, "slow", function(){
+		$(this).attr("id","closed")
+	})
+	$("#services").animate(
+		{"z-index":"300"}, "slow"
+	);
+	$("#"+top).animate(
+		{"z-index":"0"}, "slow"
+	);
+	$("#services").addClass("top");
 	$("#"+top).removeClass("top");
 });
 
@@ -229,14 +245,5 @@ $("#fact4").click(function(){
 						$("#box5").css("visibility","visible")
 							})})});
 
-$("#fact4").click(function(){
-	$('a[href^="#"]').on('click', function(event) {
-    var target = $(".bottom");
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});})
+
 

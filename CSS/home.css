@@ -104,7 +104,7 @@
 
 /*Home Section */
 #home{
-	z-index: 0
+	z-index: 300
 }
 .home-pic{
 	height: 100%;
@@ -125,7 +125,7 @@
 
 #facts{
 	background-color: white;
-	z-index:300;
+	z-index:0;
 	
 }
 
@@ -134,24 +134,54 @@
 	width: 35%;
 	border: 2px solid black;
 	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0
 }
 
-.fact-text{
+.fact-box:hover{
+	cursor: pointer;
+}
+
+
+.fact-text, .fact-text-l{
 	height: 100%;
 	width: 90%;
 	color: black;
 	font-size: 1em;
+	position: absolute;
 	text-align: center;
 	vertical-align: middle;
-	margin: 0
+	margin: 0 auto;
+	font-weight: 100;
+	font-family: 'Roboto';
+	padding: 7%
+	
 }
+
+.fact-text{
+	left: 0%;
+}
+
+.fact-text-l{
+	left: 10%}
 
 .next{
 	font-size: 3.5em;
-	left: 20%;
 	position: absolute;
-	top: -130%;
-	left: 5%
+	top: 25%;
+	left: 93.5%
+}
+
+.next-l{
+	font-size: 3.5em;
+	position: absolute;
+	top: 27%;
+	left: 1.5%
+}
+
+#box4 .next-l{
+	top: 30%
 }
 
 .hline{
@@ -247,6 +277,18 @@
 	margin-bottom: 5%;
 	visibility: hidden;
 }
+
+.learn{
+	color: blue;
+	font-weight: 400;
+	line-height: 2
+}
+
+.learn:hover{
+	text-decoration: underline;
+}
+
+
 /*Services Section*/
 
 #services{
