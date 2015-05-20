@@ -204,7 +204,7 @@ $(".team-member").click(function(){
 
 })
 
-$("#fact1").click(function(){
+$("#next1").click(function(){
 	$("#line1").css("display","inline")
 	$("#line1").animate(
 			{"width":"32.5%"}, "slow", function(){
@@ -214,7 +214,7 @@ $("#fact1").click(function(){
 						$("#box2").css("visibility","visible")
 							})})})
 
-$("#fact2").click(function(){
+$("#next2").click(function(){
 	$("#line3").css("display","inline")
 	$("#line3").animate(
 			{"animation-direction":"reverse", "width":"32.5%","left": "22.5%"}, "slow", function(){
@@ -224,7 +224,7 @@ $("#fact2").click(function(){
 						$("#box3").css("visibility","visible")
 							})})})
 
-$("#fact3").click(function(){
+$("#next3").click(function(){
 	$("#line5").css("display","inline")
 	$("#line5").animate(
 			{"animation-direction":"reverse", "width":"32.5%"}, "slow", function(){
@@ -234,7 +234,7 @@ $("#fact3").click(function(){
 						$("#box4").css("visibility","visible")
 							})})})
 
-$("#fact4").click(function(){
+$("#next4").click(function(){
 	$("#line7").css("display","inline")
 	$("#line7").animate(
 			{"animation-direction":"reverse", "width":"32.5%","left": "22.5%"}, "slow", function(){
