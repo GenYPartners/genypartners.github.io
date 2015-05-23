@@ -115,6 +115,51 @@ $(".contact").click(function(){
 	$("#"+top).removeClass("top");
 });
 
+//Millenials Page
+
+
+$("#next1").click(function(){
+	$("#line1").css("display","inline")
+	$("#line1").animate(
+			{"width":"32.5%"}, "slow", function(){
+				$("#line2").css("display","inline")
+				$("#line2").animate(
+					{"height":"14%"}, "slow", function(){
+						$("#box2").css("visibility","visible")
+							})})})
+
+$("#next2").click(function(){
+	$("#line3").css("display","inline")
+	$("#line3").animate(
+			{"animation-direction":"reverse", "width":"30.5%","left": "16.5%"}, "slow", function(){
+				$("#line4").css("display","inline")
+				$("#line4").animate(
+					{"height":"14.5%"}, "slow", function(){
+						$("#box3").css("visibility","visible")
+							})})})
+
+$("#next3").click(function(){
+	$("#line5").css("display","inline")
+	$("#line5").animate(
+			{"animation-direction":"reverse", "width":"30.5%"}, "slow", function(){
+				$("#line6").css("display","inline")
+				$("#line6").animate(
+					{"height":"15%"}, "slow", function(){
+						$("#box4").css("visibility","visible")
+						
+							})})})
+
+$("#next4").click(function(){
+	$("#line7").css("display","inline")
+	$("#line7").animate(
+			{"animation-direction":"reverse", "width":"30.5%","left": "16.5%"}, "slow", function(){
+				$("#line8").css("display","inline")
+				$("#line8").animate(
+					{"height":"15%"}, "slow", function(){
+						$("#facts").css("overflow-y", "scroll")
+						$("#box5").css("visibility","visible")
+							})})});
+
 $(".service").click(function(){
 	var eid = $(this).attr("id");
 	var eclass = $(this).attr("class");
@@ -135,9 +180,9 @@ $(".service").click(function(){
 		$(title).css("top","50%");
 	} else if (eid == "engagement") {
 		$(title).css("color","black");
-		$(text).css("color","black");
-		$(text).css("top","55%");
-		$(title).css("top","15%");
+		$(text).css("color","white");
+		$(text).css("top","3%");
+		$(title).css("top","75%");
 	};
 	}else{
 		$(this).removeClass("open");
@@ -204,46 +249,6 @@ $(".team-member").click(function(){
 
 })
 
-$("#next1").click(function(){
-	$("#line1").css("display","inline")
-	$("#line1").animate(
-			{"width":"32.5%"}, "slow", function(){
-				$("#line2").css("display","inline")
-				$("#line2").animate(
-					{"height":"14%"}, "slow", function(){
-						$("#box2").css("visibility","visible")
-							})})})
-
-$("#next2").click(function(){
-	$("#line3").css("display","inline")
-	$("#line3").animate(
-			{"animation-direction":"reverse", "width":"32.5%","left": "22.5%"}, "slow", function(){
-				$("#line4").css("display","inline")
-				$("#line4").animate(
-					{"height":"14.5%"}, "slow", function(){
-						$("#box3").css("visibility","visible")
-							})})})
-
-$("#next3").click(function(){
-	$("#line5").css("display","inline")
-	$("#line5").animate(
-			{"animation-direction":"reverse", "width":"32.5%"}, "slow", function(){
-				$("#line6").css("display","inline")
-				$("#line6").animate(
-					{"height":"15%"}, "slow", function(){
-						$("#box4").css("visibility","visible")
-							})})})
-
-$("#next4").click(function(){
-	$("#line7").css("display","inline")
-	$("#line7").animate(
-			{"animation-direction":"reverse", "width":"32.5%","left": "22.5%"}, "slow", function(){
-				$("#line8").css("display","inline")
-				$("#line8").animate(
-					{"height":"15%"}, "slow", function(){
-						$("#facts").css("overflow-x", "scroll")
-						$("#box5").css("visibility","visible")
-							})})});
 
 
 

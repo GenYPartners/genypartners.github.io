@@ -1,9 +1,8 @@
 .container{
 	width: 101%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	padding: 0;
-	overflow-y: hidden;
 	overflow-x: hidden;
 	
 }
@@ -12,11 +11,21 @@
 	cursor: pointer;
 }
 
+.next-box{
+	z-index: 100;
+	color: red;
+	position: relative;
+	top: -30%;
+	left: 50%;
+	height: 5%;
+	width: 5%;
+}
+
 /*Left Bar*/
 
 .bar1{
 	height: 100%;
-	width:20%;
+	width:21%;
 	background-color: black;
 	position: absolute;
 	z-index:700;
@@ -57,7 +66,7 @@
 /*Slide Out Bar*/
 
 .bar2{
-	position: absolute;
+	position: fixed;
 	height: 100%;
 	width:20%;
 	background-color: white;
@@ -92,14 +101,19 @@
 .main_content{
 	height: 100%;
 	width:80%;
-	position: absolute;
-	left: 20%
+	position: fixed;
+	left: 20%;
+	overflow-y:scroll;
+
+
 }
 
 .content_box{
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	position: relative;
 }
 
 .learn-btn{
@@ -111,12 +125,15 @@
 
 /*Home Section */
 #home{
-	z-index: 300
+	z-index: 0;
+	top: 0
+
 }
 .home-pic{
-	height: 100%;
+	height: 120%;
 	width: 100%;
-	z-index: 4
+	z-index: 4;
+
 }
 
 .home-text{
@@ -126,6 +143,7 @@
 	left: 5%;
 	text-align: center;
 	color: white;
+	font-weight: 300
 	
 }
 
@@ -143,25 +161,40 @@
 #facts{
 	background-color: white;
 	z-index:0;
+	height: 100%;
+	width: 100%;
+	overflow-y:scroll;
+
 	
 }
 
 .instructions{
 	font-weight: 100;
 	font-family: 'Roboto';
-	font-size: 1.8em;
-	left: 43%;
-	position: absolute;
+	font-size: 3em;
+	position: relative;
+	margin-bottom: 10%;
+	width: 100%;
+	text-align: center;
+	left: 1%;
+	line-height: .8;
+}
+
+.subtext{
+	font-size: .4em;
+	top: 3%;
+	line-height: .3
 }
 
 .fact-box{
+	width: 30%;
 	height: 20%;
-	width: 35%;
 	border: 2px solid black;
 	position: absolute;
 	text-align: center;
 	vertical-align: middle;
-	padding: 0
+	padding: 0;
+	visibility: hidden;
 }
 
 .fact-text, .fact-text-l{
@@ -169,13 +202,13 @@
 	width: 90%;
 	color: black;
 	font-size: 1.3em;
-	position: absolute;
+	position: relative;
 	text-align: center;
 	vertical-align: middle ;
 	font-weight: 100;
 	font-family: 'Roboto';
-	top: -16%;
-	display: inline-block
+	top: -10%;
+
 	
 }
 
@@ -229,78 +262,76 @@
 
 
 #box1{
-	left: 5%;
-	top: 5%;
+	left: 4%;
+	top: 15%;
+	visibility: visible;
 }
 
 #line1{
-	left: 40%;
-	top: 14%;
+	left: 34%;
+	top: 24%;
 }
 
 #line2{
-	left: 72.5%;
-	top: 14%;
+	left: 66.5%;
+	top: 24%;
 }
 
 
 #box2{
-	left: 55%;
-	top: 28%;
-	visibility: hidden;
+	left: 47%;
+	top: 38%;
+	
 }
 
 #line3{
-	left: 55%;
-	top: 37.5%
+	left: 40%;
+	top: 47.5%
 }
 
 #line4{
-	left: 22.5%;
-	top: 37.5%
+	left: 16.5%;
+	top: 47.5%
 }
 
 #box3{
-	left: 5%;
-	top: 52%;
-	visibility: hidden;
-}
+	left: 4%;
+	top: 62%;
+
+	}
 
 #line5{
-	left: 40%;
-	top: 61%;
+	left: 34%;
+	top: 71%;
 
 }
 
 #line6{
-	left: 72.5%;
-	top: 61%;
+	left: 64.5%;
+	top: 71%;
 
 }
 
 #box4{
-	left: 55%;
-	top: 76%;
-	visibility: hidden;
+	left: 47%;
+	top: 86%;
 }
 
 #line7{
-	left: 55%;
-	top: 86%;
+	left: 45%;
+	top: 96%;
 }
 
 #line8{
-	left: 22.5%;
-	top: 86%;
+	left: 16.5%;
+	top: 96%;
 	height: 15%;
 
 }
 
 #box5{
-	left: 5%;
-	top: 101%;
-	margin-bottom: 5%;
-	visibility: hidden;
+	left: 4%;
+	top: 111%;
 }
 
 .learn{
@@ -313,20 +344,23 @@
 	text-decoration: underline;
 }
 
-
 /*Services Section*/
 
 #services{
 	background-color: white;
 	z-index:0;
 	text-align: center;
+	background-image: url("https://dl.dropboxusercontent.com/s/3k53etm2n3vhts3/restaurant.png?dl=0");
+
+	
 }
 
 .service, .service-text-box{
 	top: 30%;
 	position: absolute;
 	overflow-y:scroll;	
-	opacity: 1
+	opacity: 1;
+	text-align: center;
 }
 
 .service{
@@ -343,7 +377,7 @@
 
 #web{
 	background-image: url("https://dl.dropboxusercontent.com/s/vwa3wxa02zzmndt/Tell-your-story.jpg?dl=0");
-	left: 1%
+	left: 3.5%
 }
 
 #web-text-box{
@@ -360,8 +394,8 @@
 }
 
 #content{
-	background-image: url("https://dl.dropboxusercontent.com/s/7mdud0tftek93lx/tumblr_ndyfvm0EwX1tubinno1_1280.jpg?dl=0");
-	left: 34.33%;
+	background-image: url("https://dl.dropboxusercontent.com/s/ijtdu4zceldyod3/black-and-white-apple-iphone-smartphone.jpg?dl=0");
+	left: 35.5%;
 }
 
 #content-text-box{
@@ -374,7 +408,7 @@
 }
 
 #engagement{
-	background-image: url("https://dl.dropboxusercontent.com/s/q72xlrmrn0jndpy/tumblr_nohopkwhlj1uqj0ypo1_500.jpg?dl=0");
+	background-image: url("https://dl.dropboxusercontent.com/s/la74cng5897pdqs/city-lights-night-rooftop.jpg?dl=0");
 	left: 67.66%;
 }
 
@@ -428,6 +462,8 @@
 	background-color: white;
 	z-index:0;
 	text-align: center;
+	background-image: url("https://dl.dropboxusercontent.com/s/h3trzhiwm0a87io/wood_pattern.png?dl=0");
+
 }
 
 
@@ -441,7 +477,6 @@
 .team-member{
 	height: 40%;
 	width: 30%;
-	border: 5px solid black;
 	opacity: .8;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -453,7 +488,7 @@
 
 #garrett{
 	background-image: url("https://dl.dropboxusercontent.com/s/cxhhgvq4jgutpjb/Optimized-FullSizeRender-4.jpg?dl=0");
-	left: 1%
+	left: 3.5%
 }
 
 #garrett-text-box{
@@ -471,7 +506,7 @@
 
 #ellen{
 	background-image: url("https://dl.dropboxusercontent.com/s/dt22i46l6c5ac0w/Optimized-FullSizeRender-5.jpg?dl=0");
-	left: 34.33%;
+	left: 35.5%;
 }
 
 #ellen-text-box{
