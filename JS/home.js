@@ -21,145 +21,61 @@ $(".close").click(function(){
 })
 
 $(".go-home").click(function(){
-	var top = $(".top").attr("id");
-	if (top != "home") {
-		console.log(top)
-		$("#"+top).animate(
-			{"z-index":"0"}, "slow"
-		);
-		$("#home").animate(
-			{"z-index":"300"}, "slow"
-		);
-		$("#home").addClass("top");
-		$(top).removeClass("top");
-	}
+	$(".main_content").animate({
+    scrollTop: $("#facts").offset().top
+}, 1000);
 })
 
 $(".why_millenials").click(function(){
-	var top = $(".top").attr("id");
-	$(".bar2").animate(
-		{"left":"0"}, "slow", function(){
-		$(this).attr("id","closed")
-	})
-	$("#facts").animate(
-		{"z-index":"300"}, "slow"
-	);
-	$("#"+top).animate(
-		{"z-index":"0"}, "slow"
-	);
-	$("#facts").addClass("top");
-	$("#"+top).removeClass("top");
-});
-
-$(".learn").click(function(){
-	var top = $(".top").attr("id");
-	$(".bar2").animate(
-		{"left":"0"}, "slow", function(){
-		$(this).attr("id","closed")
-	})
-	$("#services").animate(
-		{"z-index":"300"}, "slow"
-	);
-	$("#"+top).animate(
-		{"z-index":"0"}, "slow"
-	);
-	$("#services").addClass("top");
-	$("#"+top).removeClass("top");
-});
+	$(".main_content").animate({
+    scrollTop: $("#facts").offset().top
+}, 1000);
+})
 
 $(".services").click(function(){
-	var top = $(".top").attr("id");
-	$(".bar2").animate(
-		{"left":"0"}, "slow", function(){
-		$(this).attr("id","closed")
-	})
-	$("#services").animate(
-		{"z-index":"300"}, "slow"
-	);
-	$("#"+top).animate(
-		{"z-index":"0"}, "slow"
-	);
-	$("#services").addClass("top");
-	$("#"+top).removeClass("top");
-});
+	$(".main_content").animate({
+    scrollTop: $("#services").offset().top
+}, 1000);
+})
 
 $(".team").click(function(){
-	var top = $(".top").attr("id");
-	$(".bar2").animate(
-		{"left":"0"}, "slow", function(){
-		$(this).attr("id","closed")
-	})
-	$("#team").animate(
-		{"z-index":"300"}, "slow"
-	);
-	$("#"+top).animate(
-		{"z-index":"0"}, "slow"
-	);
-	$("#team").addClass("top");
-	$("#"+top).removeClass("top");
-});
+	$(".main_content").animate({
+    scrollTop: $("#team").offset().top
+}, 1000);
+})
+
 
 $(".contact").click(function(){
-	var top = $(".top").attr("id");
-	$(".bar2").animate(
-		{"left":"0"}, "slow", function(){
-		$(this).attr("id","closed")
-	})
-	$("#contact").animate(
-		{"z-index":"300"}, "slow"
-	);
-	$("#"+top).animate(
-		{"z-index":"0"}, "slow"
-	);
-	$("#contact").addClass("top");
-	$("#"+top).removeClass("top");
-});
+	$(".main_content").animate({
+    scrollTop: $("#contact").offset().top
+}, 1000);
+})
+
+
+
 
 //Millenials Page
+var id;
+var num;
+$(".hover-square").hover(function(){
+	id = $(this).attr("id");
+	num = id[2];
+	$("#"+id).css("background","white");
+	$("#"+id).css("color","black");
+	$("#"+id).css("z-index","15");
+	$(".mcover").css("display","initial");
+	$("#f"+num).css("display","initial");
+	
+},function(){
+	$("#"+id).css("background","black");
+	$("#"+id).css("color","white");
+	$("#"+id).css("z-index","initial");
+	$(".mcover").css("display","none");
+	$("#f"+num).css("display","none");
 
+})
 
-$("#next1").click(function(){
-	$("#line1").css("display","inline")
-	$("#line1").animate(
-			{"width":"32.5%"}, "slow", function(){
-				$("#line2").css("display","inline")
-				$("#line2").animate(
-					{"height":"14%"}, "slow", function(){
-						$("#box2").css("visibility","visible")
-							})})})
-
-$("#next2").click(function(){
-	$("#line3").css("display","inline")
-	$("#line3").animate(
-			{"animation-direction":"reverse", "width":"30.5%","left": "16.5%"}, "slow", function(){
-				$("#line4").css("display","inline")
-				$("#line4").animate(
-					{"height":"14.5%"}, "slow", function(){
-						$("#box3").css("visibility","visible")
-							})})})
-
-$("#next3").click(function(){
-	$("#line5").css("display","inline")
-	$("#line5").animate(
-			{"animation-direction":"reverse", "width":"30.5%"}, "slow", function(){
-				$("#line6").css("display","inline")
-				$("#line6").animate(
-					{"height":"15%"}, "slow", function(){
-						$("#box4").css("visibility","visible")
-						
-							})})})
-
-$("#next4").click(function(){
-	$("#line7").css("display","inline")
-	$("#line7").animate(
-			{"animation-direction":"reverse", "width":"30.5%","left": "16.5%"}, "slow", function(){
-				$("#line8").css("display","inline")
-				$("#line8").animate(
-					{"height":"15%"}, "slow", function(){
-						$("#facts").css("overflow-y", "scroll")
-						$("#box5").css("visibility","visible")
-							})})});
-
+//Services
 $(".service").click(function(){
 	var eid = $(this).attr("id");
 	var eclass = $(this).attr("class");
@@ -194,7 +110,7 @@ $(".service").click(function(){
 			$(title).css("color","black");
 		};
 		if (eid == "web") {
-			$(this).css("left", "1%")
+			$(this).css("left", "3.5%")
 		} else if (eid == "content") {
 			$(this).css("left", "34.33%")
 		} else if (eid == "engagement") {
@@ -239,7 +155,7 @@ $(".team-member").click(function(){
 		$(title).css("margin-left","0");
 		$(title).css("top","30%")
 		if (eid == "garrett") {
-			$(this).css("left", "1%")
+			$(this).css("left", "3.5%")
 		} else if (eid == "ellen") {
 			$(this).css("left", "34.33%")
 		} else if (eid == "luke") {

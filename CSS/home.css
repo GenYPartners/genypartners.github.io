@@ -43,17 +43,6 @@
 	border: 1px solid white
 }
 
-.expand{
-	position: absolute;
-	color: white;
-	font-size: 5em;
-	font-weight: 100;
-	top: 45%;
-	left: 70%;
-	cursor: hand;
-	width: 25%;
-	text-align: center;
-}
 
 .copyright{
 	position: absolute;
@@ -63,6 +52,23 @@
 	left: 10%
 }
 
+.nav-container{
+	position: absolute;
+	top:40%;
+	left: -10%;
+	width: 100%;
+	text-align: center;
+}
+
+.nav-list{
+	font-size: 1.5em;
+	line-height: 2;
+	list-style-type: none;
+	text-decoration: underline;
+	font-family: 'Roboto';
+	font-weight: 100;
+	color: white
+}
 /*Slide Out Bar*/
 
 .bar2{
@@ -79,22 +85,7 @@
 	margin-right: 3%
 }
 
-.nav-container{
-	position: absolute;
-	top:30%;
-	left: -10%;
-	width: 100%;
-	text-align: center;
-}
 
-.nav-list{
-	font-size: 1.5em;
-	line-height: 2;
-	list-style-type: none;
-	text-decoration: underline;
-	font-family: 'Roboto';
-	font-weight: 100
-}
 
 
 /*Main Content*/
@@ -159,13 +150,9 @@
 /*Fact Section*/
 
 #facts{
-	background-color: white;
 	z-index:0;
 	height: 100%;
 	width: 100%;
-	overflow-y:scroll;
-
-	
 }
 
 .instructions{
@@ -186,162 +173,110 @@
 	line-height: .3
 }
 
-.fact-box{
-	width: 30%;
-	height: 20%;
-	border: 2px solid black;
-	position: absolute;
-	text-align: center;
-	vertical-align: middle;
-	padding: 0;
-	visibility: hidden;
+.mosaic, .mcover{
+	height: 60%;
+	width: 100%;
+	background: white
 }
 
-.fact-text, .fact-text-l{
-	height: 100%;
-	width: 90%;
-	color: black;
-	font-size: 1.3em;
+.mcover{
+	z-index: 10;
+	background: gray;
+	opacity: .7;
+	position: absolute;
+	display: none
+}
+
+.mosaic-row{
+	height: 49%;
+	width: 100%;
 	position: relative;
-	text-align: center;
-	vertical-align: middle ;
-	font-weight: 100;
+	margin-bottom: .5%;
+	display: flex;
+	flex-direction:row;
+	text-align: center
+}
+
+.msquare{
+	width: 24.6%;
+	height: 100%;
+	margin: .5px;
+	position: relative;
+	left:1.1% !important;
+	background: black;
+	color: white;
+	line-height: .8;
 	font-family: 'Roboto';
-	top: -10%;
-
-	
+	font-weight: 100;
+	vertical-align: middle;
 }
 
-.fact-text{
-	left: 0%;
-	
-}
-
-.fact-text-l{
-	left: 10%}
-
-.next{
-	font-size: 3.5em;
-	position: absolute;
-	top: 25%;
-	left: 93.5%
-}
-
-.next-l{
-	font-size: 3.5em;
-	position: absolute;
-	top: 27%;
-	left: 1.5%
-}
-
-.next:hover, .next-l:hover{
-	cursor: pointer;
-}
-
-#box4 .next-l{
-	top: 30%
-}
-
-.hline{
-	height: .1%;
-	border: 2px solid black;
-
-	position: absolute;
+.fact-top, .fact-bottom{
+	font-size: 1.5em;
 	display: none;
-	width: 0%;
-}
-
-.vline{
-	height: 16%;
-	border: 2px solid black;
+	z-index: 100;
 	position: absolute;
-	display: none;
-	height: 0%;
+	top: 70%;
+	color: white;
+	font-family: 'Roboto';
+	font-weight: 300;
+	text-align: center;
+	width: 100%
+
 }
 
-
-
-#box1{
-	left: 4%;
-	top: 15%;
-	visibility: visible;
+.fact-bottom{
+	top: 40%;
 }
 
-#line1{
-	left: 34%;
-	top: 24%;
+#ms1{
+	background-image: url("https://dl.dropboxusercontent.com/s/2j5phbf78hylnmk/coffee-cup-mug-desk.jpg?dl=0");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 23% 0%;
 }
 
-#line2{
-	left: 66.5%;
-	top: 24%;
+#ms2{
+	font-size: 7em;
+	padding-top: 5%
 }
 
+#ms3{
+	background-image: url("https://dl.dropboxusercontent.com/s/3634nz1utpt2hd2/city-cars-road-houses.jpg?dl=0");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 23% 0%;
+}
 
-#box2{
-	left: 47%;
-	top: 38%;
+#ms4{
+	padding-top: 7%
+}
+
+#ms4 p{
+	font-size: 5em;
+	vertical-align: middle;
+	height: 100%;
+
+}
+
+#ms5, #ms7{
+	font-size: 7em;
+	padding-top: 5%
+}
+
+#ms6{
+	background-image: url("https://dl.dropboxusercontent.com/s/6qjks7wzlhyfuav/sea-sailing-ship-boat-sailboat.jpg?dl=0");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 23% 0%;
+}	
+
+#ms8{
 	
-}
-
-#line3{
-	left: 40%;
-	top: 47.5%
-}
-
-#line4{
-	left: 16.5%;
-	top: 47.5%
-}
-
-#box3{
-	left: 4%;
-	top: 62%;
-
-	}
-
-#line5{
-	left: 34%;
-	top: 71%;
-
-}
-
-#line6{
-	left: 64.5%;
-	top: 71%;
-
-}
-
-#box4{
-	left: 47%;
-	top: 86%;
-}
-
-#line7{
-	left: 45%;
-	top: 96%;
-}
-
-#line8{
-	left: 16.5%;
-	top: 96%;
-	height: 15%;
-
-}
-
-#box5{
-	left: 4%;
-	top: 111%;
-}
-
-.learn{
-	color: blue;
-	font-weight: 400;
-	line-height: 2
-}
-
-.learn:hover{
-	text-decoration: underline;
+	background-image: url("https://dl.dropboxusercontent.com/s/q72xlrmrn0jndpy/tumblr_nohopkwhlj1uqj0ypo1_500.jpg?dl=0");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 23% 0%;
 }
 
 /*Services Section*/
@@ -350,7 +285,7 @@
 	background-color: white;
 	z-index:0;
 	text-align: center;
-	background-image: url("https://dl.dropboxusercontent.com/s/3k53etm2n3vhts3/restaurant.png?dl=0");
+	background-image: url("https://dl.dropboxusercontent.com/s/icybxyb7gdlrz30/images.jpeg?dl=0");
 
 	
 }
