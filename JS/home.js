@@ -142,7 +142,7 @@ $(".team-member").click(function(){
 	var text = "#"+eid+"-text";
 	var title = "#"+eid+"-title";
 	console.log(eid + " " + eclass);
-	if (eclass.includes("open") == false){
+	if (eclass.contains("open") == false){
 	$(this).addClass("open");
 	$(text).css("display","initial");
 	$(this).css("left", "5%");
