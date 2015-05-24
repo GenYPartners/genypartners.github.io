@@ -22,8 +22,11 @@ $(".close").click(function(){
 
 $(".go-home").click(function(){
 	$(".main_content").animate({
-    scrollTop: $("#facts").offset().top
-}, 1000);
+    	scrollTop: $("#facts").offset().top
+	}, 1000);
+	analytics.track('Menu Click', {
+  		section:"home"
+	});
 })
 
 $(".why_millenials").click(function(){
@@ -34,21 +37,30 @@ $(".why_millenials").click(function(){
 
 $(".services").click(function(){
 	$(".main_content").animate({
-    scrollTop: $("#services").offset().top
-}, 1000);
+    	scrollTop: $("#services").offset().top
+	}, 1000);
+	analytics.track('Menu Click', {
+  		section:"services"
+	});
 })
 
 $(".team").click(function(){
 	$(".main_content").animate({
-    scrollTop: $("#team").offset().top
-}, 1000);
+    	scrollTop: $("#team").offset().top
+	}, 1000);
+	analytics.track('Menu Click', {
+  		section:"team"
+	});
 })
 
 
 $(".contact").click(function(){
 	$(".main_content").animate({
-    scrollTop: $("#contact").offset().top
-}, 1000);
+    	scrollTop: $("#contact").offset().top
+	}, 1000);
+	analytics.track('Menu Click', {
+  		section:"contact"
+	});
 })
 
 
@@ -88,7 +100,10 @@ $(".service").click(function(){
 	$(this).css("left", "5%");
 	$(title).css("font-weight","400");
 	$(title).css("margin-left","1.5%");
-	$(title).css("top","72%")
+	$(title).css("top","72%");
+	analytics.track('Service Open', {
+  		service: eid
+	});
 	if (eid == "web") {
 		$(title).css("color","white");
 		$(text).css("color","white");
@@ -135,6 +150,9 @@ $(".team-member").click(function(){
 	$(title).css("margin-left","1.5%");
 	$(title).css("top","72%");
 	$(this).css("background-size","100% auto")
+	analytics.track('Team Open', {
+  		team_member:eid
+	});
 	if (eid == "garrett") {
 		$(title).css("color","white");
 		$(text).css("color","white");
