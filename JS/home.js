@@ -94,7 +94,7 @@ $(".service").click(function(){
 	var text = "#"+eid+"-text";
 	var title = "#"+eid+"-title";
 	console.log(eid + " " + eclass);
-	if (eclass.includes("open") == false){
+	if (eclass.indexOf("open") < 1){
 	$(this).addClass("open");
 	$(text).css("display","initial");
 	$(this).css("left", "5%");
@@ -142,7 +142,7 @@ $(".team-member").click(function(){
 	var text = "#"+eid+"-text";
 	var title = "#"+eid+"-title";
 	console.log(eid + " " + eclass);
-	if (eclass.contains("open") == false){
+	if (eclass.indexOf("open") < 1){
 	$(this).addClass("open");
 	$(text).css("display","initial");
 	$(this).css("left", "5%");
