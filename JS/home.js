@@ -100,7 +100,7 @@ $(".service").click(function(){
 	$(this).css("left", "5%");
 	$(title).css("font-weight","400");
 	$(title).css("margin-left","1.5%");
-	$(title).css("top","72%");
+	$(title).css("top","70%");
 	analytics.track('Service Open', {
   		service: eid
 	});
@@ -108,12 +108,10 @@ $(".service").click(function(){
 		$(title).css("color","white");
 		$(text).css("color","white");
 	} else if (eid == "content") {
-		$(title).css("top","50%");
+		$(title).css("color","black")
 	} else if (eid == "engagement") {
 		$(title).css("color","black");
-		$(text).css("color","white");
-		$(text).css("top","3%");
-		$(title).css("top","75%");
+		$(text).css("color","black");
 	};
 	}else{
 		$(this).removeClass("open");
@@ -122,15 +120,14 @@ $(".service").click(function(){
 		$(title).css("margin-left","0");
 		$(title).css("top","30%")
 		if (eid == "web") {
-			$(title).css("color","black");
-		};
-		if (eid == "web") {
+			$(title).css("color","white");
 			$(this).css("left", "3.5%")
 		} else if (eid == "content") {
-			$(this).css("left", "34.33%")
+			$(title).css("color","white");
+			$(this).css("left", "35.33%")
 		} else if (eid == "engagement") {
 			$(this).css("left", "67.66%");
-			$(title).css("color","black");
+			$(title).css("color","white");
 		};
 	}
 
@@ -148,7 +145,7 @@ $(".team-member").click(function(){
 	$(this).css("left", "5%");
 	$(title).css("font-weight","400");
 	$(title).css("margin-left","1.5%");
-	$(title).css("top","72%");
+	$(title).css("top","50%");
 	$(this).css("background-size","100% auto")
 	analytics.track('Team Open', {
   		team_member:eid
@@ -157,14 +154,9 @@ $(".team-member").click(function(){
 		$(title).css("color","white");
 		$(text).css("color","white");
 	} else if (eid == "ellen") {
-		$(title).css("top","50%");
-		$(text).css("top","40%");
 		$(text).css("color","white");
 	} else if (eid == "luke") {
 		$(text).css("color","white");
-		$(text).css("top","5%");
-		//$(text).css("left","0%");
-		$(title).css("top","15%");
 	};
 	}else{
 		$(this).removeClass("open");
@@ -175,7 +167,7 @@ $(".team-member").click(function(){
 		if (eid == "garrett") {
 			$(this).css("left", "3.5%")
 		} else if (eid == "ellen") {
-			$(this).css("left", "34.33%")
+			$(this).css("left", "35.33%")
 		} else if (eid == "luke") {
 			$(this).css("left", "67.66%");
 		};

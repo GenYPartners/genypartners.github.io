@@ -105,6 +105,8 @@
 	overflow-y:hidden;
 	overflow-x:hidden;
 	position: relative;
+	background-image: url("https://dl.dropboxusercontent.com/s/1qh6yoshmkiabxq/px_by_Gre3g.png?dl=0");
+
 }
 
 .learn-btn{
@@ -165,6 +167,7 @@
 	text-align: center;
 	left: 1%;
 	line-height: .8;
+	color: white
 }
 
 .subtext{
@@ -176,7 +179,7 @@
 .mosaic, .mcover{
 	height: 60%;
 	width: 100%;
-	background: white
+	background: transparent;
 }
 
 .mcover{
@@ -289,9 +292,12 @@
 	background-color: white;
 	z-index:0;
 	text-align: center;
-	background-image: url("https://dl.dropboxusercontent.com/s/icybxyb7gdlrz30/images.jpeg?dl=0");
+	/*background-image: url("https://dl.dropboxusercontent.com/s/gr262y5cohj9fvx/1907211.jpg?dl=0");
+*/
+}
 
-	
+#service-title{
+	color: white;
 }
 
 .service, .service-text-box{
@@ -347,7 +353,7 @@
 }
 
 #engagement{
-	background-image: url("https://dl.dropboxusercontent.com/s/la74cng5897pdqs/city-lights-night-rooftop.jpg?dl=0");
+	background-image: url("https://dl.dropboxusercontent.com/s/2j5phbf78hylnmk/coffee-cup-mug-desk.jpg?dl=0");
 	left: 67.66%;
 }
 
@@ -378,10 +384,11 @@
 .service-text{
 	color: black;
 	z-index: 16;
-	position: absolute;
+	position: relative;
+	top: 80%;
 	display: none;
 	font-family: "Roboto";
-	font-weight: 100
+	font-weight: 300
 }
 
 
@@ -401,8 +408,10 @@
 	background-color: white;
 	z-index:0;
 	text-align: center;
-	background-image: url("https://dl.dropboxusercontent.com/s/h3trzhiwm0a87io/wood_pattern.png?dl=0");
+}
 
+#team-title{
+	color: white;
 }
 
 
@@ -489,10 +498,11 @@
 .team-text{
 	color: black;
 	z-index: 16;
-	position: absolute;
+	position: relative;
 	display: none;
 	font-family: "Roboto";
-	font-weight: 100
+	font-weight: 100;
+	top: 60%;
 }
 
 
