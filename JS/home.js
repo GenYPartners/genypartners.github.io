@@ -136,6 +136,20 @@ $(".service").click(function(){
 
 $(".team-member").click(function(){
 	var eid = $(this).attr("id");
+	if (eid == "garrett"){
+		window.open("https://www.linkedin.com/in/gmgoehring")
+	} else if (eid == "ellen"){
+		window.open("https://www.linkedin.com/pub/ellen-erpenbeck/68/6ab/6a0")
+	} else if (eid == "luke"){
+		window.open("https://www.linkedin.com/pub/luke-zhang/94/b90/875")
+	}
+	analytics.track('Team Open', {
+  		team_member:eid
+	});
+})
+
+/*$(".team-member").click(function(){
+	var eid = $(this).attr("id");
 	var eclass = $(this).attr("class");
 	var text = "#"+eid+"-text";
 	var title = "#"+eid+"-title";
@@ -174,7 +188,7 @@ $(".team-member").click(function(){
 		};
 	}
 
-})
+})*/
 
 
 
