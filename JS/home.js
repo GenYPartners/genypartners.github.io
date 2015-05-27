@@ -67,6 +67,7 @@ $(".contact").click(function(){
 
 
 //Millenials Page
+var test = "it works";
 var id;
 var num;
 $(".hover-square").hover(function(){
@@ -110,8 +111,8 @@ $(".service").click(function(){
 	} else if (eid == "content") {
 		$(title).css("color","black")
 	} else if (eid == "engagement") {
-		$(title).css("color","black");
-		$(text).css("color","black");
+		$(title).css("color","white");
+		$(text).css("color","white");
 	};
 	}else{
 		$(this).removeClass("open");
