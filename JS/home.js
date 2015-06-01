@@ -20,48 +20,7 @@ $(".close").click(function(){
 	})
 })
 
-$(".go-home").click(function(){
-	$(".main_content").animate({
-    	scrollTop: $("#facts").offset().top
-	}, 1000);
-	analytics.track('Menu Click', {
-  		section:"home"
-	});
-})
 
-$(".why_millenials").click(function(){
-	$(".main_content").animate({
-    scrollTop: $("#facts").offset().top
-}, 1000);
-})
-
-$(".services").click(function(){
-	$(".main_content").animate({
-    	scrollTop: $("#services").offset().top
-	}, 1000);
-	analytics.track('Menu Click', {
-  		section:"services"
-	});
-})
-
-$(".team").click(function(){
-	$(".main_content").animate({
-    	scrollTop: $("#team").offset().top
-	}, 1000);
-	analytics.track('Menu Click', {
-  		section:"team"
-	});
-})
-
-
-$(".contact").click(function(){
-	$(".main_content").animate({
-    	scrollTop: $("#contact").offset().top
-	}, 1000);
-	analytics.track('Menu Click', {
-  		section:"contact"
-	});
-})
 
 
 
